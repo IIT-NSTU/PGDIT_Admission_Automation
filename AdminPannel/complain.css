@@ -1,0 +1,377 @@
+
+        /* ________Navbar________ */
+        
+        /* UTILITIES */
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+body {
+ font-family: cursive;
+}
+a {
+ text-decoration: none;
+}
+li {
+ list-style: none;
+}
+/* ______________ */
+/* NAVBAR STYLING STARTS */
+.navbar {
+
+position: fixed;
+width: 100%;
+top: 0;
+
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ padding: 5px;
+ background-color: rgb(26, 29, 29);
+ color: #fff;
+}
+.nav-links a {
+ color: #fff;
+}
+
+.logo img{
+  width: 50px;
+}
+/* NAVBAR MENU */
+.menu {
+ display: flex;
+ gap: 1em;
+ font-size: 18px;
+}
+
+.menu li:hover {
+ background-color: #4c9e9e;
+ border-radius: 5px;
+ transition: 0.3s ease;
+}
+.menu li {
+ padding: 5px 14px;
+}
+/* DROPDOWN MENU */
+.services {
+ position: relative; 
+}
+.dropdown {
+ background-color: rgb(159, 199, 190);
+ padding: 1em 0;
+ position: absolute; /*WITH RESPECT TO PARENT*/
+ display: none;
+ border-radius: 8px;
+ top: 35px;
+}
+.dropdown li + li {
+ margin-top: 10px;
+}
+.dropdown li {
+ padding: 0.5em 1em;
+ width: 8em;
+ text-align: center;
+}
+.dropdown li:hover {
+ background-color: #4c9e9e;
+}
+.services:hover .dropdown {
+ display: block;
+}
+/* ______________ */
+
+/*RESPONSIVE NAVBAR MENU STARTS*/
+/* CHECKBOX HACK */
+input[type=checkbox]{
+ display: none;
+} 
+/*HAMBURGER MENU*/
+.hamburger {
+ display: none;
+ font-size: 24px;
+ user-select: none;
+}
+/* APPLYING MEDIA QUERIES */
+@media (max-width: 768px) {
+.menu { 
+ display:none;
+ position: absolute;
+ /* background-color:teal; */
+  background: black; 
+   margin-top: 28px; 
+ right: 0;
+ left: 0;
+ text-align: center;
+ padding: 16px 0;
+}
+.menu li:hover {
+ display: inline-block;
+ background-color:#67e8e6;
+ transition: 0.3s ease;
+}
+.menu li + li {
+ margin-top: 12px;
+}
+input[type=checkbox]:checked ~ .menu{
+ display: block;
+}
+.hamburger {
+ display: block;
+}
+.dropdown {
+ left: 50%;
+ top: 30px;
+ transform: translateX(35%);
+}
+.dropdown li:hover {
+ background-color: #4c9e9e;
+}
+}
+
+/* _______Set Result_______ */
+
+body{
+margin: 0;
+padding: 0;
+}
+.container1{
+    width: 100%;
+    background: #e0e0e0;
+    margin: auto;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container1 .setResult-form{
+    width: 60%;
+}
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 24px;
+    background: #e0e0e0;
+    box-shadow:  14px 14px 14px #d0d0d0,
+                -14px -14px 14px #f0f0f0;                      
+    padding: 20px;
+    border-radius: 20px;
+}
+.content .main-div .title{
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.content .main-div .row{
+    display: flex;
+    justify-content: space-around;
+}
+.content .main-div .row table tr td {
+   padding: 5px;
+}
+.content .main-div .row table tr td button{
+    width: 180px;
+   padding: 5px;
+   border: none;
+  background: #e0e0e0;
+  box-shadow: inset 4px 4px 10px #cccccc,
+              inset -10px -10px 10px #f4f4f4;
+  height: 35px;
+  border-radius: 10px;
+  margin-top: 10px;
+  padding: 5px;
+}
+
+
+
+/* __________ Chat Box Area ________ */
+
+
+.div-full-container{
+    background: #e0e0e0;
+}
+.chat-div-formating {
+    width: 60%;
+    margin: auto;
+    border-radius: 10px;
+    padding: 23px;
+    border-radius: 17px;
+    box-shadow: 14px 14px 14px #d0d0d0,
+                -14px -14px 14px #f0f0f0;        
+}
+@media screen and (max-width:770px) {
+  .chat-div-formating{
+    width: 90%;
+  }
+  }
+
+#container{
+	width:33%;
+	height:20%;
+	margin:0 auto;
+	font-size:0;
+	border-radius:5px;
+	overflow:hidden;
+}
+
+main{
+	width:100%;
+	height:50%;
+	display:inline-block;
+	font-size:15px;
+	vertical-align:top;
+}
+.status{
+	width:8px;
+	height:8px;
+	border-radius:50%;
+	display:inline-block;
+	margin-right:7px;
+}
+.green{
+	background-color:#58b666;
+}
+.orange{
+	background-color:#ff725d;
+}
+.blue{
+	background-color:#6fbced;
+	margin-right:0;
+	margin-left:7px;
+}
+
+main header{
+	height:110px;
+	padding:30px 20px 30px 40px;
+}
+main header > *{
+	display:inline-block;
+	vertical-align:top;
+}
+main header img:first-child{
+	border-radius:50%;
+}
+main header img:last-child{
+	width:24px;
+	margin-top:8px;
+}
+main header div{
+	margin-left:10px;
+	margin-right:145px;
+}
+main header h2{
+	font-size:16px;
+	margin-bottom:5px;
+}
+main header h3{
+	font-size:14px;
+	font-weight:normal;
+	color:#7e818a;
+}
+
+#chat{
+	padding-left:0;
+	margin:0;
+	list-style-type:none;
+	overflow-y:scroll;
+	height:535px;
+	/* border-top:2px solid #fff;
+	border-bottom:2px solid #fff; */
+}
+#chat li{
+	padding:10px 30px;
+}
+#chat h2,#chat h3{
+	display:inline-block;
+	font-size:13px;
+	font-weight:normal;
+}
+#chat h3{
+	color:#bbb;
+}
+#chat .entete{
+	margin-bottom:5px;
+}
+#chat .message{
+	padding:10px;
+	color:#fff;
+	line-height:25px;
+	max-width:90%;
+	display:inline-block;
+	text-align:left;
+	border-radius:5px;
+}
+#chat .you .entete h3{
+    color: #d343ad;
+    font-weight: 500;
+}
+#chat .me .entete h3{
+    color:#bb43d3;
+    font-weight: 500;
+}
+#chat .me{
+	text-align:right;
+}
+#chat .you .message{
+	background-color:#58b666;
+}
+#chat .me .message{
+	background-color:#6fbced;
+}
+#chat .triangle{
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 0 10px 10px 10px;
+}
+#chat .you .triangle{
+		border-color: transparent transparent #58b666 transparent;
+		margin-left:15px;
+}
+/* #chat .me .triangle{
+		border-color: transparent transparent #6fbced transparent;
+		margin-right:125px;
+} */
+
+main footer{
+	height:155px;
+	padding:20px 30px 10px 20px;
+}
+main footer textarea{
+    background: white;
+    box-shadow:inset 4px 4px 10px #cccccc,
+              inset -10px -10px 10px #f4f4f4;
+}
+main footer textarea{
+	resize:none;
+	border:none;
+	display:block;
+	width:100%;
+	height:80px;
+	border-radius:3px;
+	padding:20px;
+	font-size:13px;
+	margin-bottom:13px;
+}
+main footer textarea::placeholder{
+	color:#ddd;
+}
+main footer img{
+	height:30px;
+	cursor:pointer;
+}
+main footer a{
+	text-decoration:none;
+	text-transform:uppercase;
+	font-weight:bold;
+	color:#6fbced;
+	vertical-align:top;
+	margin-left:333px;
+	margin-top:5px;
+	display:inline-block;
+}
+
+
+
+

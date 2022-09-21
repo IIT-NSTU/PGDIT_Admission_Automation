@@ -1,0 +1,345 @@
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --body-background-color: #E6E6FA;
+    --navigation-bar-bg-color: #272b2bcf;
+    --nav-item-color: aliceblue;
+    --div-box-shadow-up:5px 5px 9px #b6b6c6,
+    -5px -5px 9px #ffffff;
+    --div-button-box-shadow-up: 5px 5px 8px lightblue,
+    -5px -5px 8px lightblue;
+    --div-box-shadow-down:inset 5px 5px 9px #b6b6c6,
+    inset -5px -5px 9px #ffffff;
+    --div-input-bg-color: #E6E6FA;
+}
+
+body {
+    background-color: var(--body-background-color);
+}
+
+/*
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 100px;
+    background: var(--navigation-bar-bg-color);
+    height: 90px;
+    border-radius: 10px;
+}
+
+header a img {
+    width: 50px;
+}
+
+header ul {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li {
+    list-style: none;
+    position: relative;
+}
+
+ul li a {
+    position: relative;
+    text-decoration: none;
+    color: var(--nav-item-color);
+    font-size: 1.2rem;
+    font-weight: 700;
+    transition: 0.5s;
+    padding: 8px;
+    letter-spacing: .05rem;
+}
+
+ul li a:hover {
+    color: rgb(30, 196, 152);
+    background: rgb(53, 2, 2);
+    border-radius: 5px;
+}*/
+
+header {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 100px;
+    background: black;
+    height: 70px;
+    z-index: 1;
+}
+
+header a img {
+    width: 50px;
+}
+
+header ul {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+header ul li {
+    list-style: none;
+    position: relative;
+}
+
+ul li a {
+    position: relative;
+    text-decoration: none;
+    color: var(--nav-item-color);
+    font-size: 1.2rem;
+    font-weight: 700;
+    transition: 0.5s;
+    padding: 8px;
+    letter-spacing: .05rem;
+}
+
+ul li a:hover {
+    color: rgb(30, 196, 152);
+    border-radius: 5px;
+}
+
+#homeArea h1 {
+    z-index: 111;
+    color: #ffffff;
+    font-weight: 550;
+    letter-spacing: .5rem;
+}
+
+/* ___________ Login  Area____________  */
+
+.div-full-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.div-formating {
+    width: 90%;
+    margin: auto;
+    border-radius: 10px;
+    padding: 13px;
+    
+    box-shadow: var(--div-box-shadow-up);
+}
+
+.div-image-formating {
+    display: flex;
+    width: 60px;
+    margin: auto;
+    border-radius: 52px;
+    border: 3px solid rgb(255, 254, 254);
+}
+
+.div-title-formating {
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.5rem;
+    letter-spacing: .1rem;
+}
+
+.div-formating .mb-3 input{
+    
+    padding: 10px;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+    border-radius: 32px;
+    background: var(--div-input-bg-color);
+    box-shadow: var(--div-box-shadow-down);
+}
+
+
+/* Get BillerID Button */
+
+.div-full-container .button-div {
+    display: flex;
+    justify-content: center;
+}
+
+.button-center {
+    display: flex;
+    justify-content: center;
+}
+
+.button-div a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+.div-formating button {
+    padding: 8px;
+    font-size: 17px;
+    font-weight: 600;
+    border-radius: 10px;
+    width: 200px;
+    border: 1.5px solid rgb(197, 183, 173);
+    background:#E6E6FA;
+    box-shadow:  inset 5px 5px 9px #b6b6c6,
+    inset -5px -5px 9px #ffffff;
+}
+
+.button-formating {
+    border: none;
+    width: 100px;
+    padding: 8px;
+    font-size: 17px;
+    font-weight: 600;
+    border-radius: 10px;
+    background: var(--div-input-bg-color);
+    box-shadow: var(--div-box-shadow-down);
+}
+
+.button-div button:hover {
+    border-radius: 12px;
+    color: blueviolet;
+    background: linear-gradient(145deg, #E6E6FA, #c6f9fd);
+    box-shadow: 5px 5px 9px #b6b6c6,
+    -5px -5px 9px #ffffff;
+}
+
+.button-div button{
+    margin-top: 30px;
+}
+
+
+
+/* ___________ */
+
+.form-div{
+    display: block;
+}
+
+
+/* -----Academic Qualification---- */
+
+.full-width{
+    width: -moz-available;
+    width: 100%;
+  }
+
+
+  
+.radiogroup {
+    display: flex;
+  }
+  .wrapper {
+    margin: 8px 0;
+  }
+  .state {
+    position: absolute;
+    top: 0;
+    right: 0;
+    pointer-events: none;
+  }
+  .label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    color: #394a56;
+  }
+  .text {
+    margin-left: 5px;
+  }
+  .indicator {
+    position: relative;
+   margin-left: 10px;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    box-shadow: inset 5px 5px 10px #4bc397,
+              inset -5px -5px 10px #c5fbe7;
+    overflow: hidden;
+  }
+  .indicator::before,
+  .indicator::after {
+    content: '';
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    height: 80%;
+    width: 80%;
+    border-radius: 50%;
+  }
+  .indicator::before {
+    background-color: #16d2aa;
+    box-shadow:  5px 5px 7px #68847a,
+               -5px -5px 7px #e6ffff;;
+  
+  }
+  .indicator::after {
+    background: #8df5d4;
+  box-shadow: inset 3px 3px 7px #526860,
+              inset -3px -3px 7px #90f2d4;
+    transform: scale3d(1, 1, 1);
+    transition: opacity .25s ease-in-out, transform .25s ease-in-out;
+  }
+  .state:checked ~ .label .indicator::after {
+    transform: scale3d(.975, .975, 1) translate3d(0, 10%, 0);
+    opacity: 0;
+  }
+  .label:hover .text {
+    opacity: 1;
+  }
+  
+  h3{
+    padding: 15px;
+    text-align: center;
+  }
+
+  .neomorphisom{
+    padding: 7px;
+    border: none;
+    border-radius: 5px;
+    border-radius: 12px;
+    background: #E6E6FA;
+    box-shadow: inset 5px 5px 9px #b6b6c6,
+    inset -5px -5px 9px #ffffff;
+
+    /* box-shadow: inset 5px 5px 10px #89afa1,
+              inset -5px -5px 10px #c5fbe7; */
+   }
+.row .col-sm-12 a button{
+    width: 100px;
+    padding: 10px;
+    border-radius: 32px;
+    background: #E6E6FA;
+    box-shadow:  inset 5px 5px 9px #b6b6c6,
+    inset -5px -5px 9px #ffffff;
+}
+.row .col-sm-12 a button:hover{
+    border-radius: 17px;
+    box-shadow:   5px 5px 8px lightblue,
+    -5px -5px 8px lightblue;
+}
+.nextButton{
+
+    display: flex;
+    justify-content: center;
+  }
+
+  /* ________________ */
+ .personalInfo {
+    margin-top: 100px;
+ }
+
+
+ .login-div{
+    margin-bottom: 50px;
+ }

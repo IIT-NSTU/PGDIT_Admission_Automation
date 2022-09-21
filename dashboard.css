@@ -1,0 +1,467 @@
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --body-background-color: #a7d5c4;
+    --navigation-bar-bg-color: #272b2bcf;
+    --nav-item-color: aliceblue;
+    --div-box-shadow-up: 7px 7px 13px #96c0b0,
+        -7px -7px 13px #b8ead8;
+    --div-button-box-shadow-up: 5px 5px 8px #96c0b0,
+        -5px -5px 8px #b8ead8;
+    --div-box-shadow-down: inset 5px 5px 10px #89afa1,
+        inset -5px -5px 10px #c5fbe7;
+    --div-input-bg-color: #a7d5c4;
+}
+
+
+body {
+    background-color: var(--body-background-color);
+}
+
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 100px;
+    background: #070a35;
+    height: 90px;
+    
+}
+
+header a img {
+    width: 50px;
+}
+
+header ul {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li {
+    list-style: none;
+    position: relative;
+}
+
+ul li a {
+    position: relative;
+    text-decoration: none;
+    color: var(--nav-item-color);
+    font-size: 1.2rem;
+    font-weight: 700;
+    transition: 0.5s;
+    padding: 8px;
+    letter-spacing: .05rem;
+}
+
+ul li a:hover {
+    color: rgb(30, 196, 152);
+    background: rgb(53, 2, 2);
+    border-radius: 5px;
+}
+
+#homeArea h1 {
+    z-index: 111;
+    color: #ffffff;
+    font-weight: 550;
+    letter-spacing: .5rem;
+}
+
+/* ___________ Login  Area____________  */
+
+
+
+.div-full-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.div-formating {
+    width: 90%;
+    margin: auto;
+    border-radius: 10px;
+    padding: 23px;
+    border-radius: 17px;
+    box-shadow: var(--div-box-shadow-up);
+}
+
+.div-image-formating {
+    display: flex;
+    width: 60px;
+    margin: auto;
+    border-radius: 52px;
+    border: 3px solid rgb(255, 254, 254);
+}
+
+.div-title-formating {
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.5rem;
+    letter-spacing: .1rem;
+}
+
+.div-formating .mb-3 input{
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+    border-radius: 32px;
+    background: var(--div-input-bg-color);
+    box-shadow: var(--div-box-shadow-down);
+}
+
+
+/* Get BillerID Button */
+
+.div-full-container .button-div {
+    display: flex;
+    justify-content: center;
+}
+
+.button-center {
+    display: flex;
+    justify-content: center;
+}
+
+.button-div a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+.div-formating button {
+    padding: 8px;
+    font-size: 17px;
+    font-weight: 600;
+    border-radius: 10px;
+    width: 200px;
+    border: 1.5px solid rgb(197, 183, 173);
+    background: #a7d5c4;
+    box-shadow: inset 5px 5px 10px #89afa1,
+        inset -5px -5px 10px #c5fbe7;
+}
+
+.button-formating {
+    border: none;
+    width: 100px;
+    padding: 8px;
+    font-size: 17px;
+    font-weight: 600;
+    border-radius: 10px;
+    background: var(--div-input-bg-color);
+    box-shadow: var(--div-box-shadow-down);
+}
+
+.button-div button:hover {
+    border-radius: 12px;
+    color: blueviolet;
+    border-radius: 17px;
+    background: linear-gradient(145deg, #a0d5c1, #a6dbc7);
+    box-shadow: 5px 5px 5px #95beae,
+        -5px -5px 5px #abe6d0;
+}
+
+
+
+/* __________Dashboard __________ */
+
+.row1{
+    /* height: 200px; */
+    /* background: #000; */
+    display: flex;
+    
+    /* flex-direction: column; */
+    /* justify-content: space-around;
+    padding: 10px; */
+}
+.leftcol{
+    display: flex;
+    flex-direction: column;
+    height: 50%;
+    width: 50%;
+    padding: 5px;
+    background: var(--div-input-bg-color);
+    /* box-shadow: var(--div-box-shadow-down); */
+}
+.row1 .leftcol .photo{
+    display: flex;
+}
+.row1 .leftcol .photo img{
+    width: 100px;
+    margin: auto;
+    border-radius: 15px;
+/*    box-shadow: var(--div-box-shadow-down);*/
+}
+.row1 .leftcol .admit{
+    display: flex;
+}
+.row1 .leftcol .admit a{
+    text-decoration: none;
+    color: blue;
+    margin: auto;
+}
+.rightcol{
+    height: auto;
+   border-radius: 17px;
+    background: var(--body-background-color);
+    box-shadow: var(--div-box-shadow-down);
+    padding: 10px;
+}
+.col-left{
+    /* height: 100px; */
+    position: relative;
+    /* border: 3px solid green; */
+    background: #ffffff;
+    align-items: center;
+    
+}
+.col-left .show-photo{
+    height: 100px;
+    width: 100px;
+    background-color: var(--div-input-bg-color);
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    box-shadow: var(--div-box-shadow-down);
+    
+}
+.col-right{
+    /* height: 100px; */
+    background: #da6565;
+}
+
+.container {
+    height: 200px;
+    position: relative;
+    border: 3px solid green;
+  }
+  
+  .vertical-center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+
+  @media screen and (max-width:770px) {
+    .row1{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .leftcol{
+        margin: auto;
+        width: 70%;
+    }
+    .rightcol{
+        margin: auto;
+        width: 95%;
+    }
+    .col-left .show-photo{
+        height: 50px;
+        width: 50px;
+    }
+  }
+
+
+
+  /* ___________ChatBox___________ */
+  /* *{
+	box-sizing:border-box;
+} */
+/* body{
+	background-color:#abd9e9;
+	font-family:Arial;
+} */
+.chat-div-formating {
+    width: 60%;
+    margin: auto;
+    border-radius: 10px;
+    padding: 23px;
+    border-radius: 17px;
+    box-shadow: var(--div-box-shadow-up);
+}
+@media screen and (max-width:770px) {
+  .chat-div-formating{
+    width: 90%;
+  }
+  }
+
+#container{
+	width:33%;
+	height:20%;
+	background:#eff3f7;
+	margin:0 auto;
+	font-size:0;
+	border-radius:5px;
+	overflow:hidden;
+}
+
+main{
+	width:100%;
+	height:50%;
+	display:inline-block;
+	font-size:15px;
+	vertical-align:top;
+}
+.status{
+	width:8px;
+	height:8px;
+	border-radius:50%;
+	display:inline-block;
+	margin-right:7px;
+}
+.green{
+	background-color:#58b666;
+}
+.orange{
+	background-color:#ff725d;
+}
+.blue{
+	background-color:#6fbced;
+	margin-right:0;
+	margin-left:7px;
+}
+
+main header{
+	height:110px;
+	padding:30px 20px 30px 40px;
+}
+main header > *{
+	display:inline-block;
+	vertical-align:top;
+}
+main header img:first-child{
+	border-radius:50%;
+}
+main header img:last-child{
+	width:24px;
+	margin-top:8px;
+}
+main header div{
+	margin-left:10px;
+	margin-right:145px;
+}
+main header h2{
+	font-size:16px;
+	margin-bottom:5px;
+}
+main header h3{
+	font-size:14px;
+	font-weight:normal;
+	color:#7e818a;
+}
+
+#chat{
+	padding-left:0;
+	margin:0;
+	list-style-type:none;
+	overflow-y:scroll;
+	height:535px;
+	border-top:2px solid #fff;
+	border-bottom:2px solid #fff;
+}
+#chat li{
+	padding:10px 30px;
+}
+#chat h2,#chat h3{
+	display:inline-block;
+	font-size:13px;
+	font-weight:normal;
+}
+#chat h3{
+	color:#bbb;
+}
+#chat .entete{
+	margin-bottom:5px;
+}
+#chat .message{
+	padding:10px;
+	color:#fff;
+	line-height:25px;
+	max-width:90%;
+	display:inline-block;
+	text-align:left;
+	border-radius:5px;
+}
+#chat .you .entete h3{
+    color: #d343ad;
+    font-weight: 500;
+}
+#chat .me .entete h3{
+    color:#bb43d3;
+    font-weight: 500;
+}
+#chat .me{
+	text-align:right;
+}
+#chat .you .message{
+	background-color:#58b666;
+}
+#chat .me .message{
+	background-color:#6fbced;
+}
+#chat .triangle{
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 0 10px 10px 10px;
+}
+#chat .you .triangle{
+		border-color: transparent transparent #58b666 transparent;
+		margin-left:15px;
+}
+/* #chat .me .triangle{
+		border-color: transparent transparent #6fbced transparent;
+		margin-right:125px;
+} */
+
+main footer{
+	height:155px;
+	padding:20px 30px 10px 20px;
+}
+main footer textarea{
+    background: var(--div-input-bg-color);
+    box-shadow: var(--div-box-shadow-down);
+}
+main footer textarea{
+	resize:none;
+	border:none;
+	display:block;
+	width:100%;
+	height:80px;
+	border-radius:3px;
+	padding:20px;
+	font-size:13px;
+	margin-bottom:13px;
+}
+main footer textarea::placeholder{
+	color:#ddd;
+}
+main footer img{
+	height:30px;
+	cursor:pointer;
+}
+main footer a{
+	text-decoration:none;
+	text-transform:uppercase;
+	font-weight:bold;
+	color:#6fbced;
+	vertical-align:top;
+	margin-left:333px;
+	margin-top:5px;
+	display:inline-block;
+}

@@ -1,0 +1,488 @@
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --body-background-color: #E6E6FA;
+    --navigation-bar-bg-color: #272b2bcf;
+    --nav-item-color: aliceblue;
+    /* --div-box-shadow-up: 7px 7px 13px lightblue,
+        -7px -7px 13px lightblue; */
+         --div-box-shadow-up: 5px 5px 9px #b6b6c6,
+          -5px -5px 9px #ffffff;
+
+        
+    --div-button-box-shadow-up: 5px 5px 8px lightblue,
+        -5px -5px 8px lightblue;
+
+    /* #b8ead8; */
+
+    /* #a4e5d5; */
+    --div-box-shadow-down : inset 5px 5px 9px #b6b6c6,
+    inset -5px -5px 9px #ffffff;
+    --div-input-bg-color: #E6E6FA;
+
+
+    /* 
+    border-radius: 20px;
+background: #E6E6FA;
+box-shadow: inset 5px 5px 9px #b6b6c6,
+            inset -5px -5px 9px #ffffff;
+    
+    */
+}
+
+body {
+    background-color: var(--body-background-color);
+}
+
+/* #b8ead8; */
+
+header {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 100px;
+    background: #070a35;
+    height: 60px;
+    z-index: 10;
+   
+}
+
+header a img {
+    width: 50px;
+}
+
+header ul {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+header ul li {
+    list-style: none;
+    position: relative;
+}
+
+ul li a {
+    position: relative;
+    text-decoration: none;
+    color: var(--nav-item-color);
+    font-size: 1.2rem;
+    font-weight: 700;
+    transition: 0.5s;
+    padding: 8px;
+    letter-spacing: .05rem;
+}
+
+ul li a:hover {
+    color: rgb(30, 196, 152);
+    border-radius: 5px;
+}
+
+.coverPage {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(74, 75, 80, 0.2),
+            rgba(4, 9, 30, 0.2)), url(./img/campus1.jpeg);
+    background-size: cover;
+    margin-bottom: 100px;
+}
+
+#homeArea h1 {
+    z-index: 111;
+    color: #ffffff;
+    font-weight: 550;
+    letter-spacing: .5rem;
+}
+
+/* ___________ Login  Area____________  */
+
+.login-div {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.div-full-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.loginform {
+    width: 60%;
+    margin: auto;
+    border-radius: 10px;
+    padding: 23px;
+    border-radius: 17px;
+    box-shadow: var(--div-box-shadow-up);
+}
+
+.div-formating {
+    width: 60%;
+    margin: auto;
+    border-radius: 10px;
+    padding: 23px;
+
+margin-top: 60px;
+ border-radius: 20px;
+background: #E6E6FA;
+box-shadow:  5px 5px 9px #b6b6c6,
+             -5px -5px 9px #ffffff;
+  
+}
+
+.loginform .mb-3 img {
+    display: flex;
+    width: 60px;
+    margin: auto;
+    border-radius: 52px;
+    border: 3px solid rgb(255, 254, 254);
+}
+
+.div-image-formating {
+    display: flex;
+    width: 60px;
+    margin: auto;
+    border-radius: 52px;
+    border: 3px solid rgb(255, 254, 254);
+}
+
+.loginform .title {
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.5rem;
+    letter-spacing: .1rem;
+}
+
+.div-title-formating {
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.5rem;
+    letter-spacing: .1rem;
+}
+
+.loginform .mb-3 input {
+    padding: 10px;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+    border-radius: 32px;
+    background: var(--div-input-bg-color);
+    box-shadow: var(--div-box-shadow-down);
+}
+
+.div-formating .mb-3 input {
+    padding: 10px;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+    border-radius: 32px;
+    background: var(--div-input-bg-color);
+    box-shadow: var(--div-box-shadow-down);
+}
+
+.loginform .mb-3 input:hover {
+    background: #E6E6FA;
+    /* #5eceb2; */
+    border-radius: 12px;
+}
+
+
+
+.loginform .mb-3 a {
+    text-decoration: none;
+    font-size: 17px;
+    color: rgb(212, 97, 15);
+}
+
+.loginform .mb-3 a:hover {
+    font-size: 20px;
+    font-weight: 500;
+    color: rgb(236, 0, 0);
+}
+
+.loginform .button-div {
+    display: flex;
+    justify-content: center;
+}
+
+.button-center {
+    display: flex;
+    justify-content: center;
+}
+
+.button-div a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+.login-div button {
+    border: none;
+    width: 100px;
+    padding: 8px;
+    font-size: 17px;
+    font-weight: 600;
+    border-radius: 10px;
+    background: var(--div-input-bg-color);
+    box-shadow: var(--div-box-shadow-down);
+}
+
+.button-formating {
+    border: none;
+    width: 100px;
+    padding: 8px;
+    font-size: 17px;
+    font-weight: 600;
+    border-radius: 10px;
+    background: var(--div-input-bg-color);
+    box-shadow: var(--div-box-shadow-down);
+}
+
+.button-div button:hover {
+    /* border: 1px solid rgb(166, 162, 162); */
+    color: blueviolet;
+    background: linear-gradient(145deg, #E6E6FA, #c6f9fd);
+    background: #E6E6FA;
+    box-shadow: var(--div-box-shadow-up);
+}
+
+
+
+/* Pay Application Fee */
+
+.div-formating .mb-3 a {
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+    border-radius: 32px;
+    background-color: var(--body-background-color);
+    /* background: var(--div-input-bg-color); */
+    box-shadow: var(--div-box-shadow-down);
+}
+
+.div-formating .mb-3 a:hover {
+    color: rgb(19, 19, 162);
+    box-shadow: var(--div-box-shadow-up);
+}
+
+@media screen and (max-width: 700px) {
+    header {
+        display: flex;
+        box-shadow: none;
+        padding: 0px;
+        height: 65px;
+        width: 98%;
+        left: 1%;
+        justify-content: left;
+        align-items: baseline;
+        box-shadow: none;
+    }
+
+    header a img {
+        width: 40px;
+    }
+
+    header ul {
+
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+        align-items: left;
+    }
+
+    header ul li {
+        font-size: 2px;
+
+    }
+
+    header ul li a {
+        font-size: 10px;
+    }
+
+    .div-formating {
+        width: 90%;
+    }
+
+    .loginform {
+        width: 90%;
+    }
+
+}
+
+
+
+
+/* ________FAQ________ */
+
+/* FAQ Section */
+.faq {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.accor {
+    color: rgb(0, 0, 0);
+    background: #a7d5c4;
+    /* box-shadow: inset 5px 5px 10px #9fd2bf,
+        -5px -5px 10px #c5fbe7; */
+}
+
+.accor h2 {
+    /* background: #a7d5c4; */
+    color: #000;
+}
+
+.accordion-button:not(.collapsed) {
+    color: black;
+    background: #a7d5c4;
+}
+
+
+/* _______Notice Section_______ */
+#notice-area {
+    margin-bottom: 100px;
+}
+
+.div-full-container .bg-light .container {
+    background: var(--body-background-color);
+}
+.row{
+        display: flex;
+        justify-content: space-around;
+        padding: 5px;
+        
+}
+.col-xl-3{
+    overflow: hidden;
+    /* border: 1px solid black; */
+}
+.noticeDescription{
+    overflow: hidden;
+}
+
+.row .col-xl-3 .facaltyCard {
+    height: 340px;
+    background-color: var(--body-background-color);
+    box-shadow: var(--div-box-shadow-down);
+    border-radius: 20px;
+
+}
+
+
+/* ______Abiut Section______ */
+#about-area {
+    margin-top: -250px;
+}
+
+
+
+/* About Section */
+
+.about {
+    margin-top: 100px;
+    width: 100%;
+    /* background: #a7d5c4; */
+    background-color: lavender;
+    /* height: 100vh; */
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+.bgcolor {
+    /* background: #a7d5c4; */
+}
+
+.container1 {
+    width: 100vw;
+    /* background: #a7d5c4; */
+    background-color: lavender;
+    padding: 50px;
+}
+.col-lg-5 img{
+    height: 400px;
+    width: 400px;
+    border-radius: 20px;
+    background: #E6E6FA;
+    box-shadow:  5px 5px 12px #bdbdcd,
+                 -5px -5px 12px #ffffff;
+}
+
+.container {
+
+    /* background: #a7d5c4; */
+    background-color: lavender;
+   
+}
+
+.social-link {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #666;
+    border-radius: 50%;
+    transition: all 0.3s;
+    font-size: 0.9rem;
+}
+
+.social-link:hover,
+.social-link:focus {
+    /* background: #ddd; */
+    text-decoration: none;
+    color: #555;
+}
+
+.row .col-lg-5 img {
+    border-radius: 31px 38px 31px 38px;
+    /* box-shadow: 4px 4px 10px #5b9880c4,
+        -4px -4px 10px #c7faea; */
+}
+.row .col-lg-6{
+    text-align: justify;
+}
+
+.container .aboutTitle h1 {
+    font-weight: 600;
+    letter-spacing: .5rem;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.facaltyCard {
+    /* background: #a7d5c4; */
+    border-radius: 32px;
+    /* background: #a7d5c4;
+    box-shadow: inset 5px 5px 10px #89afa1,
+        inset -5px -5px 10px #c5fbe7; */
+}
+
+.facaltyCard ul li img {
+    border-radius: 50px;
+}
+
+.facaltyCard ul li button {
+    border-radius: 50px;
+}

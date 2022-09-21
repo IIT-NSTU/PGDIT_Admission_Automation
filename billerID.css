@@ -1,0 +1,223 @@
+html {
+    scroll-behavior: smooth;
+}
+:root{
+   --body-background-color: #a7d5c4;
+   --navigation-bar-bg-color : #272b2bcf;
+   --nav-item-color:aliceblue;
+   --div-box-shadow-up : 7px 7px 13px #96c0b0,
+   -7px -7px 13px #b8ead8;
+   --div-button-box-shadow-up : 5px 5px 8px #96c0b0,
+   -5px -5px 8px #b8ead8;
+   --div-box-shadow-down:inset 5px 5px 10px #89afa1,
+   inset -5px -5px 10px #c5fbe7;
+   --div-input-bg-color:#a7d5c4;
+}
+body{
+    background-color: var(--body-background-color);
+}
+
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 100px;
+    background: var(--navigation-bar-bg-color);
+    height: 90px;
+    border-radius: 10px;
+}
+
+header a img {
+    width: 50px;
+}
+
+header ul {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li {
+    list-style: none;
+    position: relative;
+}
+
+ul li a {
+    position: relative;
+    text-decoration: none;
+    color: var(--nav-item-color);
+    font-size: 1.2rem;
+    font-weight: 700;
+    transition: 0.5s;
+    padding: 8px;
+    letter-spacing: .05rem;
+}
+
+ul li a:hover {
+    color: rgb(30, 196, 152);
+    background: rgb(53, 2, 2);
+    border-radius: 5px;
+}
+
+
+
+#homeArea h1{
+    z-index: 111;
+    color: #ffffff;
+    font-weight: 550;
+    letter-spacing: .5rem;
+}
+
+
+                    
+/* ___________ Login  Area____________  */
+
+.login-div {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.div-full-container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.loginform {
+    width: 90%;
+    margin: auto;
+    border-radius: 10px;
+    padding: 23px;
+    border-radius: 17px;
+    box-shadow: var(--div-box-shadow-up);
+}
+.div-formating{
+    width: 60%;
+    margin: auto;
+    border-radius: 10px;
+    padding: 23px;
+    border-radius: 17px;
+    box-shadow: var(--div-box-shadow-up);
+}
+
+.loginform .mb-3 img {
+    display: flex;
+    width: 60px;
+    margin: auto;
+    border-radius: 52px;
+    border: 3px solid rgb(255, 254, 254);
+}
+.div-image-formating{
+    display: flex;
+    width: 60px;
+    margin: auto;
+    border-radius: 52px;
+    border: 3px solid rgb(255, 254, 254);
+}
+
+.loginform .title {
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.5rem;
+    letter-spacing: .1rem;
+}
+.div-title-formating{
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.5rem;
+    letter-spacing: .1rem;
+}
+
+.loginform .mb-3 input {
+    padding: 10px;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+    border-radius: 32px;
+    background: var(--div-input-bg-color);
+    box-shadow: var(--div-box-shadow-down);
+}
+.div-formating .mb-3 input{
+    padding: 10px;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+    border-radius: 32px;
+    background: var(--div-input-bg-color);
+    box-shadow: var(--div-box-shadow-down);
+}
+
+.loginform .mb-3 input:hover {
+    background: #5eceb2;
+    border-radius: 12px;
+}
+
+
+
+.loginform .mb-3 a {
+    text-decoration: none;
+    font-size: 17px;
+    color: rgb(212, 97, 15);
+}
+
+.loginform .mb-3 a:hover {
+    font-size: 20px;
+    font-weight: 500;
+    color: rgb(236, 0, 0);
+}
+
+
+/* ____Button____ */
+.loginform .button-div{
+display: flex;
+justify-content: center;   
+}
+.button-center{
+    display: flex;
+    justify-content: center;   
+}
+.button-div a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+.login-div button{
+    border: none;
+    width: 100px;
+    padding: 8px;
+    font-size: 17px;
+    font-weight: 600;
+    border-radius: 10px;
+    background: var(--div-input-bg-color);
+    box-shadow: var(--div-box-shadow-down);
+}
+.button-formating{
+    border: none;
+    width: 100px;
+    padding: 8px;
+    font-size: 17px;
+    font-weight: 600;
+    border-radius: 10px;
+    background: var(--div-input-bg-color);
+    box-shadow: var(--div-box-shadow-down);
+}
+
+.button-div button:hover{
+    box-shadow: var(--div-button-box-shadow-up)
+}
+
+@media screen and (max-width:700px) {
+    .div-formating{
+        width: 90%;
+    }
+}

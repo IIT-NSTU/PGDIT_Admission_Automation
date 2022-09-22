@@ -1,3 +1,12 @@
+
+<?php
+    session_start();
+error_reporting(0);
+    
+    if(isset($_SESSION['roll'])){
+      header("Location: dashboard.php");exit();
+    }
+
 <!DOCTYPE html>
 <html lang="en">
 

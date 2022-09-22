@@ -6,12 +6,12 @@ function send_sms($phone, $msg)
     $mobile = $phone;
     //$message = urlencode($msg);
     $message = $msg;
-    $url = "http://smsportal.muthofun.com/smsapi";
+    $url = "http://sms.joybangla.com/smsapi";   //Demo URL
     $data = [
-            "api_key" => "C2000880619ef28c6ad848.20482156",
+            "api_key" => "kfjiflfkofikldfgyds985568itkikjt4874853",  // Demo Key
             "type" => "text",
             "contacts" => $mobile,
-            "senderid" => "8809601001944",
+            "senderid" => "096989432736", //Demo SID
             "msg" => $message
             ];
     $ch = curl_init();
